@@ -7,7 +7,7 @@ const TodoList = (props) => {
             {props.todos.map((todo, index) => {
                 return (
                     <TodoItem
-                        itemKey={index}
+                        key={index}
                         todo={todo}
                         index={index}
                         toggleTodoDone={props.toggleTodoDone}
